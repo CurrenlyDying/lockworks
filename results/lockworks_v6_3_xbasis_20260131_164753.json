@@ -1,0 +1,91 @@
+{
+  "timestamp": "20260131_164753",
+  "experiment": "x_basis_killshot",
+  "version": "6.3",
+  "test_case": {
+    "val_a": 1,
+    "val_b": 0
+  },
+  "results": [
+    {
+      "mode": "NONE",
+      "desc": "Baseline (No Fault)",
+      "total": 4096,
+      "syndrome_1": 0.483642578125,
+      "syndrome_0": 0.516357421875,
+      "top_state": "010",
+      "counts": {
+        "111": 464,
+        "010": 623,
+        "100": 437,
+        "000": 618,
+        "011": 590,
+        "101": 424,
+        "110": 483,
+        "001": 457
+      }
+    },
+    {
+      "mode": "MID_X",
+      "desc": "MID-X (Effective Z, Manifold Active)",
+      "total": 4096,
+      "syndrome_1": 0.497802734375,
+      "syndrome_0": 0.502197265625,
+      "top_state": "011",
+      "counts": {
+        "001": 561,
+        "011": 624,
+        "000": 579,
+        "101": 353,
+        "110": 501,
+        "100": 503,
+        "111": 429,
+        "010": 546
+      }
+    },
+    {
+      "mode": "LATE_Z",
+      "desc": "LATE-Z (Phase Error, Manifold Sealed)",
+      "total": 4096,
+      "syndrome_1": 0.49853515625,
+      "syndrome_0": 0.50146484375,
+      "top_state": "011",
+      "counts": {
+        "101": 405,
+        "111": 470,
+        "001": 536,
+        "011": 642,
+        "000": 479,
+        "010": 569,
+        "110": 528,
+        "100": 467
+      }
+    },
+    {
+      "mode": "LATE_X",
+      "desc": "LATE-X (Control - Direct X after H)",
+      "total": 4096,
+      "syndrome_1": 0.514892578125,
+      "syndrome_0": 0.485107421875,
+      "top_state": "010",
+      "counts": {
+        "010": 619,
+        "111": 570,
+        "001": 525,
+        "110": 437,
+        "101": 480,
+        "011": 538,
+        "100": 395,
+        "000": 532
+      }
+    }
+  ],
+  "metrics": {
+    "svr_x": 1.0014713094654242,
+    "svr_x_control": 1.034330554193232,
+    "syndrome_baseline": 0.483642578125,
+    "syndrome_mid_x": 0.497802734375,
+    "syndrome_late_z": 0.49853515625,
+    "syndrome_late_x": 0.514892578125
+  }
+}

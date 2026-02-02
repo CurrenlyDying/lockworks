@@ -1,0 +1,41 @@
+{
+  "timestamp": "20260131_131658",
+  "version": "3.2",
+  "method": "anchor_sequence",
+  "tests": [
+    {
+      "mode": "NORMAL",
+      "inverted": false,
+      "p_00": 0.06005859375,
+      "p_01": 0.913818359375,
+      "p_10": 0.010986328125,
+      "p_11": 0.01513671875,
+      "bell_probability": 0.0751953125,
+      "counts": {
+        "00": 246,
+        "01": 3743,
+        "10": 45,
+        "11": 62
+      },
+      "success": false
+    },
+    {
+      "mode": "INVERTED",
+      "inverted": true,
+      "p_00": 0.04150390625,
+      "p_01": 0.0517578125,
+      "p_10": 0.0146484375,
+      "p_11": 0.89208984375,
+      "bell_probability": 0.93359375,
+      "counts": {
+        "01": 212,
+        "11": 3654,
+        "00": 170,
+        "10": 60
+      },
+      "success": true
+    }
+  ],
+  "best_mode": "INVERTED",
+  "best_bell": 0.93359375
+}

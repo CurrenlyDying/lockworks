@@ -1,0 +1,160 @@
+{
+  "timestamp": "20260131_085400",
+  "backend": "ibm_fez",
+  "experiments": [
+    {
+      "experiment": "ghz3",
+      "hypothesis": "Three-Qubit GHZ State",
+      "outcome": "PARTIAL",
+      "expected_states": [
+        "000",
+        "111"
+      ],
+      "observed_prob": 0.53173828125,
+      "threshold": 0.7,
+      "null_threshold": 0.5,
+      "state_distribution": {
+        "000": 0.524169921875,
+        "001": 0.439208984375,
+        "010": 0.009521484375,
+        "011": 0.01025390625,
+        "100": 0.00244140625,
+        "101": 0.00146484375,
+        "110": 0.00537109375,
+        "111": 0.007568359375
+      },
+      "interpretation": "Partial success: 53.2% (threshold: 70.0%)",
+      "dominance": 0.524169921875,
+      "top_state": "000",
+      "z_score": 318.42377034243657,
+      "raw_counts": {
+        "000": 2147,
+        "001": 1799,
+        "010": 39,
+        "111": 31,
+        "011": 42,
+        "110": 22,
+        "100": 10,
+        "101": 6
+      }
+    },
+    {
+      "experiment": "cascade",
+      "hypothesis": "Soliton Roll Cascade",
+      "outcome": "NULL",
+      "expected_states": [
+        "10"
+      ],
+      "observed_prob": 0.0,
+      "threshold": 0.8,
+      "null_threshold": 0.6,
+      "state_distribution": {
+        "0": 0.046142578125,
+        "1": 0.953857421875
+      },
+      "interpretation": "Phase accumulation errors or decoherence during multi-roll sequence",
+      "dominance": 0.953857421875,
+      "top_state": "1",
+      "z_score": 51.46918943018131,
+      "raw_counts": {
+        "1": 3907,
+        "0": 189
+      }
+    },
+    {
+      "experiment": "interference",
+      "hypothesis": "Edge-State Interference",
+      "outcome": "SUCCESS",
+      "expected_states": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "observed_prob": 1.0,
+      "threshold": 0.9,
+      "null_threshold": 0.7,
+      "state_distribution": {
+        "00": 0.316650390625,
+        "01": 0.233154296875,
+        "10": 0.247802734375,
+        "11": 0.202392578125
+      },
+      "interpretation": "Edge state (\u03b8=0.1) produces quantum superposition with measurable interference",
+      "dominance": 0.316650390625,
+      "top_state": "00",
+      "z_score": 13.532119349950442,
+      "raw_counts": {
+        "00": 1297,
+        "01": 955,
+        "10": 1015,
+        "11": 829
+      }
+    },
+    {
+      "experiment": "stress",
+      "hypothesis": "Decoherence Stress Test",
+      "outcome": "NULL",
+      "expected_states": [
+        "00"
+      ],
+      "observed_prob": 0.0,
+      "threshold": 0.85,
+      "null_threshold": 0.75,
+      "state_distribution": {
+        "0": 0.979248046875,
+        "1": 0.020751953125
+      },
+      "interpretation": "Higher complexity increases decoherence, topology breaks down",
+      "dominance": 0.979248046875,
+      "top_state": "0",
+      "z_score": 58.03080557100128,
+      "raw_counts": {
+        "0": 4011,
+        "1": 85
+      }
+    },
+    {
+      "experiment": "correlation",
+      "hypothesis": "Classical Correlation Test",
+      "outcome": "NULL",
+      "expected_states": [
+        "000",
+        "111"
+      ],
+      "observed_prob": 0.531982421875,
+      "threshold": 0.75,
+      "null_threshold": 0.55,
+      "state_distribution": {
+        "000": 0.526123046875,
+        "001": 0.438232421875,
+        "010": 0.009521484375,
+        "011": 0.01025390625,
+        "100": 0.00341796875,
+        "101": 0.001220703125,
+        "110": 0.00537109375,
+        "111": 0.005859375
+      },
+      "interpretation": "Gate fidelity degrades in 3-qubit chains",
+      "dominance": 0.526123046875,
+      "top_state": "000",
+      "z_score": 319.08708230452385,
+      "raw_counts": {
+        "100": 14,
+        "001": 1795,
+        "000": 2155,
+        "111": 24,
+        "110": 22,
+        "101": 5,
+        "010": 39,
+        "011": 42
+      }
+    }
+  ],
+  "summary": {
+    "success": 1,
+    "partial": 1,
+    "null": 3,
+    "total": 5
+  }
+}

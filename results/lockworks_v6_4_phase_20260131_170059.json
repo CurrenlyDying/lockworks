@@ -1,0 +1,73 @@
+{
+  "timestamp": "20260131_170059",
+  "experiment": "phase_stabilizer",
+  "version": "6.4",
+  "test_case": {
+    "val_a": 0,
+    "val_b": 0
+  },
+  "results": [
+    {
+      "mode": "NONE",
+      "desc": "Baseline (No Fault)",
+      "total": 4096,
+      "syndrome_1": 0.084228515625,
+      "syndrome_0": 0.915771484375,
+      "top_state": "000",
+      "counts": {
+        "010": 238,
+        "000": 3737,
+        "100": 59,
+        "001": 42,
+        "111": 6,
+        "110": 9,
+        "011": 4,
+        "101": 1
+      }
+    },
+    {
+      "mode": "MID_Z",
+      "desc": "MID-Z (Phase Fault in Manifold)",
+      "total": 4096,
+      "syndrome_1": 0.90380859375,
+      "syndrome_0": 0.09619140625,
+      "top_state": "001",
+      "counts": {
+        "001": 3684,
+        "000": 249,
+        "011": 50,
+        "101": 87,
+        "100": 10,
+        "110": 8,
+        "010": 3,
+        "111": 5
+      }
+    },
+    {
+      "mode": "LATE_Z",
+      "desc": "LATE-Z (Phase Fault after Lock)",
+      "total": 4096,
+      "syndrome_1": 0.899658203125,
+      "syndrome_0": 0.100341796875,
+      "top_state": "001",
+      "counts": {
+        "001": 3668,
+        "000": 274,
+        "011": 56,
+        "101": 78,
+        "010": 3,
+        "100": 8,
+        "111": 6,
+        "110": 3
+      }
+    }
+  ],
+  "metrics": {
+    "svr_x": 0.995407887628309,
+    "syndrome_none": 0.084228515625,
+    "syndrome_mid_z": 0.90380859375,
+    "syndrome_late_z": 0.899658203125,
+    "delta_mid": 0.819580078125,
+    "delta_late": 0.8154296875
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "timestamp": "20260131_162804",
+  "experiment": "geometric_gantlet",
+  "version": "6.2",
+  "test_case": {
+    "val_a": 1,
+    "val_b": 0
+  },
+  "results": [
+    {
+      "mode": "NONE",
+      "desc": "Baseline (No Fault)",
+      "total": 4096,
+      "syndrome_1": 0.06103515625,
+      "syndrome_0": 0.93896484375,
+      "state_101_fidelity": 0.88232421875,
+      "top_state": "101",
+      "counts": {
+        "101": 3614,
+        "111": 90,
+        "011": 118,
+        "001": 108,
+        "000": 108,
+        "100": 48,
+        "110": 6,
+        "010": 4
+      }
+    },
+    {
+      "mode": "MID_X",
+      "desc": "MID-X (Effective Z after H)",
+      "total": 4096,
+      "syndrome_1": 0.06494140625,
+      "syndrome_0": 0.93505859375,
+      "state_101_fidelity": 0.87060546875,
+      "top_state": "101",
+      "counts": {
+        "101": 3566,
+        "111": 93,
+        "000": 127,
+        "011": 126,
+        "001": 104,
+        "100": 61,
+        "010": 8,
+        "110": 11
+      }
+    },
+    {
+      "mode": "LATE_Z",
+      "desc": "LATE-Z (Frame-matched to MID-X)",
+      "total": 4096,
+      "syndrome_1": 0.0654296875,
+      "syndrome_0": 0.9345703125,
+      "state_101_fidelity": 0.872314453125,
+      "top_state": "101",
+      "counts": {
+        "101": 3573,
+        "001": 104,
+        "011": 130,
+        "111": 105,
+        "100": 56,
+        "110": 11,
+        "000": 114,
+        "010": 3
+      }
+    },
+    {
+      "mode": "LATE_X",
+      "desc": "LATE-X (Control - Direct X)",
+      "total": 4096,
+      "syndrome_1": 0.93701171875,
+      "syndrome_0": 0.06298828125,
+      "state_101_fidelity": 0.008056640625,
+      "top_state": "100",
+      "counts": {
+        "100": 3575,
+        "010": 140,
+        "000": 137,
+        "001": 118,
+        "110": 85,
+        "101": 33,
+        "111": 5,
+        "011": 3
+      }
+    }
+  ],
+  "metrics": {
+    "svr_matched": 1.0075187969924813,
+    "svr_control": 14.428571428571429,
+    "syndrome_mid_x": 0.06494140625,
+    "syndrome_late_z": 0.0654296875,
+    "syndrome_late_x": 0.93701171875
+  }
+}

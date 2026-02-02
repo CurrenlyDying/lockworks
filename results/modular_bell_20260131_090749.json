@@ -1,0 +1,16 @@
+{
+  "timestamp": "20260131_090749",
+  "backend": "ibm_fez",
+  "architecture": "modular_v2.0",
+  "cores": 2,
+  "physical_qubits": 4,
+  "bell_probability": 0.5830078125,
+  "dominance": 0.56640625,
+  "z_score": 114.95956117033377,
+  "counts": {
+    "00": 2320,
+    "01": 1662,
+    "10": 46,
+    "11": 68
+  }
+}

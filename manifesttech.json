@@ -1,0 +1,51 @@
+{
+    "project": "LockWorks",
+    "version": "6.1",
+    "paradigm": "Cylindrical Topological Memory (CTM)",
+    "hardware_validated": "ibm_fez",
+    "core_constants": {
+        "braid_complexity": 6,
+        "theta_robust": 0.0,
+        "theta_fisher": 0.196,
+        "gate_strategy": "Anchor Sequence (Harden -> Link -> Lock)",
+        "native_cx_alignment": "inverted"
+    },
+    "benchmarks": {
+        "storage": {
+            "single_disk_0": 0.976,
+            "single_disk_1": 0.945
+        },
+        "gearing": {
+            "modular_bell_fidelity": 0.934,
+            "inter_core_swap_correlation": 0.921
+        },
+        "stability": {
+            "idle_loop_100c_retention": 0.931,
+            "complexity_scaling_correlation": 0.943
+        },
+        "parity_witness": {
+            "avg_parity_success": 0.951,
+            "avg_data_fidelity": 0.939
+        },
+        "fault_tolerance": {
+            "svr": 15.4,
+            "syndrome_mid": 0.062,
+            "syndrome_late": 0.949,
+            "post_selection_lift_pct": 6.6
+        }
+    },
+    "key_discoveries": [
+        "Hardware-native CX direction on ibm_fez is inverted from logical mapping.",
+        "Anchor Sequence (Harden control before linking) prevents phase kickback.",
+        "C=6 braid complexity is optimal (C=8 causes depth overhead).",
+        "Manifold absorbs mid-circuit faults (SVR=15.4) while detecting late faults.",
+        "95.1% parity witness accuracy demonstrates syndrome detection without decoder."
+    ],
+    "physics_notes": [
+        "Phase kickback in v1.0 caused 90%+ inversion errors.",
+        "The braid creates a 'phase sink' that pulls state back to attractor.",
+        "SVR > 10 confirms Fault-Absorbing Manifold (not just gate cancellation).",
+        "Topology persists through 100+ identity cycles with <7% degradation.",
+        "Scale-out modularity allows 10x improvement over monolithic chains."
+    ]
+}

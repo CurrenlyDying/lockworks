@@ -1,0 +1,79 @@
+{
+  "timestamp": "20260131_100306",
+  "backend": "ibm_fez",
+  "results": [
+    {
+      "mode": "NO_GEARBOX",
+      "bell_probability": 0.572509765625,
+      "leakage_01": 0.41748046875,
+      "counts": {
+        "01": 1710,
+        "00": 2284,
+        "11": 61,
+        "10": 41
+      },
+      "success": false
+    },
+    {
+      "mode": "BARRIER_ONLY",
+      "bell_probability": 0.586181640625,
+      "leakage_01": 0.404052734375,
+      "counts": {
+        "00": 2335,
+        "01": 1655,
+        "10": 40,
+        "11": 66
+      },
+      "success": false
+    },
+    {
+      "mode": "BASIC_SHIFT",
+      "bell_probability": 0.5732421875,
+      "leakage_01": 0.416748046875,
+      "counts": {
+        "01": 1707,
+        "00": 2273,
+        "10": 41,
+        "11": 75
+      },
+      "success": false
+    },
+    {
+      "mode": "DOUBLE_SHIFT",
+      "bell_probability": 0.58837890625,
+      "leakage_01": 0.40380859375,
+      "counts": {
+        "00": 2337,
+        "01": 1654,
+        "11": 73,
+        "10": 32
+      },
+      "success": false
+    },
+    {
+      "mode": "ECHO_SHIFT",
+      "bell_probability": 0.537841796875,
+      "leakage_01": 0.446533203125,
+      "counts": {
+        "01": 1829,
+        "00": 2121,
+        "11": 82,
+        "10": 64
+      },
+      "success": false
+    },
+    {
+      "mode": "HEAVY_DD",
+      "bell_probability": 0.5810546875,
+      "leakage_01": 0.41357421875,
+      "counts": {
+        "11": 63,
+        "00": 2317,
+        "01": 1694,
+        "10": 22
+      },
+      "success": false
+    }
+  ],
+  "best_mode": "DOUBLE_SHIFT"
+}

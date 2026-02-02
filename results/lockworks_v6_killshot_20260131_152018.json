@@ -1,0 +1,80 @@
+{
+  "timestamp": "20260131_152018",
+  "experiment": "killshot",
+  "version": "6.0",
+  "test_case": {
+    "val_a": 1,
+    "val_b": 0,
+    "fault_target": 0
+  },
+  "results": [
+    {
+      "test": "Baseline (Identity)",
+      "complexity": 0,
+      "total": 4096,
+      "syndrome_detected": 0.018310546875,
+      "syndrome_missed": 0.981689453125,
+      "recovery_potential": 0.014892578125,
+      "counts": {
+        "000": 4013,
+        "100": 61,
+        "110": 8,
+        "010": 10,
+        "001": 4
+      }
+    },
+    {
+      "test": "C=2 with Fault",
+      "complexity": 2,
+      "total": 4096,
+      "syndrome_detected": 0.0234375,
+      "syndrome_missed": 0.9765625,
+      "recovery_potential": 0.014892578125,
+      "counts": {
+        "000": 3055,
+        "001": 25,
+        "101": 917,
+        "100": 58,
+        "110": 20,
+        "111": 3,
+        "011": 8,
+        "010": 10
+      }
+    },
+    {
+      "test": "C=6 with Fault",
+      "complexity": 6,
+      "total": 4096,
+      "syndrome_detected": 0.056884765625,
+      "syndrome_missed": 0.943115234375,
+      "recovery_potential": 0.025390625,
+      "counts": {
+        "101": 3690,
+        "100": 73,
+        "111": 31,
+        "001": 129,
+        "000": 132,
+        "011": 38,
+        "110": 3
+      }
+    },
+    {
+      "test": "X-Basis Tomography",
+      "complexity": 6,
+      "entropy": 0.743355800992435,
+      "max_entropy": 3.0,
+      "coherence_score": 0.24778526699747835,
+      "counts": {
+        "101": 3643,
+        "011": 71,
+        "100": 61,
+        "001": 168,
+        "111": 25,
+        "000": 121,
+        "010": 2,
+        "110": 5
+      }
+    }
+  ],
+  "post_selection_lift": 142.70833333333331
+}

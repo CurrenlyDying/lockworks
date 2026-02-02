@@ -1,0 +1,44 @@
+{
+  "timestamp": "20260131_130733",
+  "version": "3.0",
+  "phase_bias": 0.005,
+  "tests": [
+    {
+      "test": "WRITE(1)",
+      "expected": 1,
+      "p_0": 0.055419921875,
+      "p_1": 0.944580078125,
+      "success": true,
+      "message": "\u2705 FISHER pole correctly produces Data=1"
+    },
+    {
+      "test": "WRITE(0)",
+      "expected": 0,
+      "p_0": 0.976318359375,
+      "p_1": 0.023681640625,
+      "success": true,
+      "message": "\u2705 ROBUST pole correctly produces Data=0"
+    },
+    {
+      "test": "LINK",
+      "p_00": 0.056396484375,
+      "p_01": 0.922119140625,
+      "p_10": 0.015869140625,
+      "p_11": 0.005615234375,
+      "bell_probability": 0.06201171875,
+      "success": false,
+      "counts": {
+        "01": 3777,
+        "00": 231,
+        "10": 65,
+        "11": 23
+      },
+      "message": "\u274c Bell correlation 6.2% < 60%"
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "total": 3,
+    "verdict": "PARTIAL"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "timestamp": "20260131_094653",
+  "backend": "ibm_fez",
+  "experiments": {
+    "single_write_0": {
+      "outcome": "SUCCESS",
+      "expected": 0,
+      "observed": 0,
+      "fidelity": 0.977294921875,
+      "threshold": 0.85,
+      "interpretation": "Disk reads as 0 (\u03b8=0.0, |00\u27e9 dominant)"
+    },
+    "single_write_1": {
+      "outcome": "SUCCESS",
+      "expected": 1,
+      "observed": 1,
+      "fidelity": 0.947265625,
+      "threshold": 0.8,
+      "interpretation": "Disk reads as 1 (\u03b8=0.196, |10\u27e9 dominant)"
+    },
+    "multi_isolation": {
+      "outcome": "SUCCESS",
+      "expected_pattern": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "observed_pattern": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "accuracy": 1.0,
+      "threshold": 0.75,
+      "interpretation": "Pattern [0,1,0,1] preserved with >75% per disk"
+    },
+    "link_test": {
+      "outcome": "NULL",
+      "bell_probability": 0.58740234375,
+      "counts": {
+        "00": 2350,
+        "01": 1661,
+        "10": 29,
+        "11": 56
+      },
+      "threshold": 0.6,
+      "interpretation": "CX gate didn't correlate disks - gearing failed"
+    },
+    "full_scenario": {
+      "outcome": "NULL",
+      "expected": [
+        0,
+        1
+      ],
+      "observed": [
+        1,
+        1
+      ],
+      "accuracy": 0.5,
+      "fidelity": 0.9481201171875,
+      "interpretation": "LINK corrupted disk states"
+    }
+  },
+  "summary": {
+    "success": 3,
+    "total": 5,
+    "verdict": "PARTIAL"
+  }
+}

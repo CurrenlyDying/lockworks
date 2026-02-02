@@ -1,0 +1,20 @@
+{
+  "timestamp": "20260131_142341",
+  "test": "idle_loop",
+  "n_cycles": 100,
+  "config": {
+    "theta": 0.196,
+    "expected_value": 1
+  },
+  "results": {
+    "p_0": 0.069091796875,
+    "p_1": 0.930908203125,
+    "fidelity": 0.930908203125,
+    "degradation": 0.069091796875
+  },
+  "counts": {
+    "1": 3813,
+    "0": 283
+  },
+  "success": true
+}

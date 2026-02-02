@@ -1,0 +1,25 @@
+{
+  "timestamp": "20260131_125558",
+  "backend": "ibm_fez",
+  "version": "1.2",
+  "config": {
+    "disk_0_theta": 0.1,
+    "disk_1_theta": 0.0,
+    "link_before_seal": true
+  },
+  "results": {
+    "p_00": 0.572998046875,
+    "p_01": 0.408935546875,
+    "p_10": 0.00537109375,
+    "p_11": 0.0126953125,
+    "bell_probability": 0.585693359375,
+    "leakage": 0.408935546875
+  },
+  "counts": {
+    "00": 2347,
+    "01": 1675,
+    "11": 52,
+    "10": 22
+  },
+  "success": false
+}

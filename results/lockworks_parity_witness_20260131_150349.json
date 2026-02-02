@@ -1,0 +1,83 @@
+{
+  "timestamp": "20260131_150349",
+  "experiment": "parity_witness",
+  "version": "5.0",
+  "parameters": {
+    "complexity": 6,
+    "idle_cycles": 50
+  },
+  "results": [
+    {
+      "val_a": 0,
+      "val_b": 0,
+      "expected_parity": 0,
+      "parity_success": 0.959716796875,
+      "data_fidelity": 0.965087890625,
+      "counts": {
+        "000": 3848,
+        "100": 105,
+        "110": 44,
+        "101": 39,
+        "001": 40,
+        "010": 19,
+        "111": 1
+      }
+    },
+    {
+      "val_a": 0,
+      "val_b": 1,
+      "expected_parity": 1,
+      "parity_success": 0.94970703125,
+      "data_fidelity": 0.937255859375,
+      "counts": {
+        "110": 3720,
+        "010": 119,
+        "000": 128,
+        "100": 52,
+        "011": 40,
+        "111": 34,
+        "101": 2,
+        "001": 1
+      }
+    },
+    {
+      "val_a": 1,
+      "val_b": 0,
+      "expected_parity": 1,
+      "parity_success": 0.952880859375,
+      "data_fidelity": 0.94091796875,
+      "counts": {
+        "101": 3740,
+        "100": 49,
+        "001": 114,
+        "000": 126,
+        "111": 27,
+        "110": 3,
+        "011": 34,
+        "010": 3
+      }
+    },
+    {
+      "val_a": 1,
+      "val_b": 1,
+      "expected_parity": 0,
+      "parity_success": 0.939697265625,
+      "data_fidelity": 0.9130859375,
+      "counts": {
+        "011": 3618,
+        "111": 122,
+        "010": 61,
+        "110": 128,
+        "101": 99,
+        "100": 4,
+        "001": 60,
+        "000": 4
+      }
+    }
+  ],
+  "summary": {
+    "avg_parity_success": 0.95050048828125,
+    "avg_data_fidelity": 0.9390869140625,
+    "success": true
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "timestamp": "20260131_202049",
+  "experiment": "pll",
+  "version": "6.5",
+  "test_case": {
+    "val_a": 0,
+    "val_b": 0
+  },
+  "results": [
+    {
+      "mode": "NONE",
+      "desc": "Baseline (No Fault)",
+      "total": 4096,
+      "syndrome_1": 0.050537109375,
+      "syndrome_0": 0.949462890625,
+      "top_state": "000",
+      "counts": {
+        "000": 3875,
+        "100": 78,
+        "001": 65,
+        "010": 49,
+        "101": 7,
+        "110": 5,
+        "111": 15,
+        "011": 2
+      }
+    },
+    {
+      "mode": "MID_Z",
+      "desc": "MID-Z (Pre-Braid, Should Be HEALED)",
+      "total": 4096,
+      "syndrome_1": 0.955078125,
+      "syndrome_0": 0.044921875,
+      "top_state": "001",
+      "counts": {
+        "001": 3890,
+        "101": 65,
+        "000": 66,
+        "110": 3,
+        "011": 50,
+        "100": 8,
+        "111": 13,
+        "010": 1
+      }
+    },
+    {
+      "mode": "LATE_Z",
+      "desc": "LATE-Z (Post-Braid, Should Be VISIBLE)",
+      "total": 4096,
+      "syndrome_1": 0.9501953125,
+      "syndrome_0": 0.0498046875,
+      "top_state": "001",
+      "counts": {
+        "001": 3869,
+        "101": 85,
+        "000": 55,
+        "011": 56,
+        "111": 16,
+        "110": 8,
+        "100": 6,
+        "010": 1
+      }
+    }
+  ],
+  "metrics": {
+    "svr_x": 0.9948875255623721,
+    "syndrome_none": 0.050537109375,
+    "syndrome_mid_z": 0.955078125,
+    "syndrome_late_z": 0.9501953125,
+    "delta_mid": 0.904541015625,
+    "delta_late": 0.899658203125,
+    "healing_ratio": -0.005138746145940454
+  }
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SchrodingerLang + LockWorks: hardware-aware quantum programming and circuit hardening"
+type: software
+authors:
+  - family-names: Rabah
+    given-names: Ziad
+# version: "v1.0.0"
+# date-released: "2026-02-02"
+# doi: "10.5281/zenodo.XXXXXXX"
